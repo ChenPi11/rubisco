@@ -28,6 +28,12 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: 📁 Set codepage. (Windows)
+      if: runner.os == 'Windows'
+      run: |
+        chcp 65001
+      shell: pwsh
+
     # Setup other utilities: curl, wget.
     - name: 📁 Setup other utilities. (Ubuntu)
       if: runner.os == 'Linux'
