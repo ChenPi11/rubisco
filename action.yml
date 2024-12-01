@@ -51,7 +51,7 @@ runs:
     - name: 📁 Setup Python.
       uses: actions/setup-python@v5
       with:
-        python-version: "3.13"
+        python-version: "3.12"
 
     # Setup original C/C++ toolchain: llvm, clang, cmake, ninja.
     - name: 📁 Setup C/C++ toolchain. (Linux)
